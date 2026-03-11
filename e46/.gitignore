@@ -5,5 +5,5 @@
 *.bbl
 *.blg
 *.out
-*.pdf
 .tex-installed
+.DS_Store
