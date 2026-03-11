@@ -6,3 +6,4 @@
 *.blg
 *.out
 *.pdf
+.tex-installed

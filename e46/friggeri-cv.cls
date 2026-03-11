@@ -189,18 +189,18 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+  \begin{longtable}{@{}l@{\hspace{0.5cm}}l@{}}
 }{%
-  \end{tabular*}
+  \end{longtable}
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  #1&\parbox[t]{11.8cm}{%
+  \parbox[t]{3cm}{\small\textcolor{lightgray}{#1}}&\parbox[t]{\dimexpr\textwidth-3.5cm}{%
     \textbf{#2}%
     \hfill%
-    {\Large\addfontfeature{Color=pblue} #3}\\%
-    #4\vspace{\parsep}%
-  }\\}
+    {\Large\addfontfeature{Color=pblue} #3}%
+  }\\*%
+  \multicolumn{2}{@{}l@{}}{\hspace{1cm}\parbox[t]{\dimexpr\textwidth-1cm}{\raggedright #4\vspace{\parsep}}}\\}
 
 
 %%%%%%%%%%%%%%
@@ -340,3 +340,5 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 
 \RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
+\RequirePackage{longtable}
+\AtBeginDocument{\raggedright}

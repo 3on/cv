@@ -16,12 +16,13 @@
 \usepackage{dtklogos}
 \usepackage[utf8]{inputenc}
 \usepackage{tikz}
+\usepackage{enumitem}
 \usetikzlibrary{mindmap,shadows}
 \hypersetup{
-    pdftitle={},
-    pdfauthor={},
-    pdfsubject={},
-    pdfkeywords={},
+    pdftitle={Jean-Romain Pr\'{e}vost - Senior Software Engineer},
+    pdfauthor={Jean-Romain Pr\'{e}vost},
+    pdfsubject={Resume},
+    pdfkeywords={Senior Software Engineer, React, TypeScript, JavaScript, AI, Meta},
     colorlinks=true,           % no link border color
     allbordercolors=white,      % white border color for all
     pdfborderstyle={/S/U/W 0.8}, % optional: underline instead
@@ -31,7 +32,7 @@
     bubble node font = \footnotesize,
     % specifies the minimum size of the bubble center node
     bubble center node size = 0.35cm,
-    %  specifies the minimum size of the bubbleshttps://www.overleaf.com/project/5a69207d7ec8731a8321ca06
+    %  specifies the minimum size of the bubbles
     bubble node size = 0.5cm,
     % specifies which is the distance among the bubble center node and the other bubbles
     distance center/other bubbles = 0.4cm,
@@ -52,7 +53,7 @@
 \definecolor{pblue}{HTML}{EE4466}
 
 \begin{document}
-\header{Jean-Romain} {Prévost}
+\header{Jean-Romain} {Pr\'{e}vost}
       {Senior Software Engineer}
       
 % Fake text to add separator      
@@ -84,87 +85,116 @@
   \section{Skills}
     ~
     \smartdiagram[bubble diagram]{
-        \textbf{JavaScript},
+        \textbf{JavaScript}\\\textbf{TypeScript},
         \textbf{React},
         \textbf{HTML5}\\\textbf{CSS3},
         \textbf{~Node.js~},
         \textbf{Python},
         \textbf{PHP},
         \textbf{GraphQL},
-        \textbf{Next.js}
+        \textbf{Next.js},
+        \textbf{GenAI}
     }
 \end{aside}
-~
-~
-~
-~
-~
+
+\section{Summary}
+Senior Software Engineer with 12+ years of experience building consumer-facing web applications and developer tools at scale. Deep expertise in \textbf{React}, \textbf{TypeScript}, and the modern JavaScript ecosystem, with recent focus on \textbf{AI/ML product interfaces} at Meta.
+
 \section{Experience}
 \begin{entrylist}
     \entry
-    {09/20 - 02/25}
-    {Senior Software Engineer}
-    {Meta}
-    {Led the development of a public-facing image playground website: \texttt{imagine.meta.com}. Delivered the project within a one-month deadline for the Emu launch. At the time, it was the only free image generation tool, attracting significant media attention and resharing by C-level executives.\\ 
-    Within the MetaGen organization, maintained and developed various playgrounds to support new Llama model releases and features, including agent support, side-by-side model comparisons, and file uploads.\\
-    Created a debugging tool for MetaGen that tracks each step of the model request lifecycle, from prompt to final answer, highlighting changes to prompts and metadata throughout the process.\\
-    Led front-end development for multiple Meta Financial Technologies (MFT) tools, improving internal adoption of new financial products.\\
-    Contributed to bringing an NFT wallet viewer to Facebook and Instagram web.\\
-    Maintained and modernized the Facebook Stories web viewer, ensuring a smooth Stories experience on \texttt{facebook.com}.\\}
+    {Aug 2025 - Present}
+    {CTO / Co-Founder}
+    {Tigo}
+    {\begin{itemize}[nosep, leftmargin=1em, topsep=2pt]
+        \item Co-founded \textbf{Tigo}, a tech-enabled marketplace connecting families with vetted in-home caregivers, targeting the \$160B+ U.S. home care market.
+        \item Built the MVP end-to-end: a \textbf{Next.js}/\textbf{React} marketplace hosted on \textbf{Firebase} with \textbf{PostgreSQL} and \textbf{PostGIS} for geolocation features, styled with \textbf{Tailwind CSS}.
+        \item Leveraged AI-assisted development (\textbf{Cursor}/\textbf{Claude}) to ship rapidly as a solo technical founder.
+    \end{itemize}}
 
     \entry
-    {08/18 - 01/20}
-    {Senior Software Engineer} 
-    {Cruise}
-    {As part of the Remote Assistance team, I contributed to a React web application that enabled remote control and monitoring of autonomous vehicles. I played a key role in improving tooling and test coverage, by adding support for tools such as: Enzyme, Storybook, Puppeteer. I spearheaded the rendering of the WebGL scene which relied on the internal library Worldview.\\}
+    {Sep 2020 - Feb 2025}
+    {Senior Software Engineer}
+    {Meta}
+    {\begin{itemize}[nosep, leftmargin=1em, topsep=2pt]
+        \item Led development of a public-facing \textbf{AI image generation} playground (\href{https://about.fb.com/news/2023/12/meta-ai-updates/}{\texttt{imagine.meta.com}}) for the \textbf{Emu} launch. Delivered within a one-month deadline; at the time the only free image generation tool, attracting significant media attention and resharing by C-level executives.
+        \item Maintained and developed various playgrounds within the \textbf{MetaGen} organization to support new \textbf{Llama} model releases and features, including \textbf{agent support}, side-by-side model comparisons, and file uploads.
+        \item Created a debugging tool for \textbf{MetaGen} that tracks each step of the model request lifecycle, from prompt to final answer, highlighting changes to prompts and metadata throughout the process.
+        \item Led front-end development for multiple \textbf{Meta Financial Technologies} (MFT) tools, improving internal adoption of new financial products.
+        \item Contributed to bringing a \textbf{NFT wallet} viewer to \textbf{Facebook} and \textbf{Instagram} web.
+        \item Maintained and modernized the \textbf{Facebook Stories} web viewer, ensuring a smooth Stories experience on \texttt{facebook.com}.
+    \end{itemize}}
+
     \entry
-    {09/14 - 03/18}
+    {Aug 2018 - Jan 2020}
+    {Senior Frontend Engineer}
+    {Cruise}
+    {\begin{itemize}[nosep, leftmargin=1em, topsep=2pt]
+        \item Contributed to a \textbf{React} web application enabling remote control and monitoring of \textbf{autonomous vehicles} as part of the Remote Assistance team.
+        \item Improved tooling and test coverage by adding support for \textbf{Enzyme}, \textbf{Storybook}, and \textbf{Puppeteer}.
+        \item Spearheaded rendering of the \textbf{WebGL} scene using the internal library \textbf{Worldview}.
+    \end{itemize}}
+
+    \entry
+    {Sep 2014 - Mar 2018}
     {Software Engineer}
     {Yelp}
-    {On the website, I worked on the modernization of the web photos experience and the web homepage redesign projects. Both projects required a complete rewrite front-end and back-end. I mainly focused on the front-end side of both projects. The homepage project also required code packaging as part of the micro-services transition, which I lead on the front-end.
-    \vspace*{0.5em}
-    \\
-    On the iOS application, I worked on improving various components of the business page: photo carousel header, search facet, bookmarks etc.
-    Other contributions include mentoring (intern and new hire) and pushing code to production every other week.
-    \\}
+    {\begin{itemize}[nosep, leftmargin=1em, topsep=2pt]
+        \item Modernized the web photos experience and led front-end for the web homepage redesign, both requiring complete front-end and back-end rewrites.
+        \item Led front-end code packaging as part of the \textbf{micro-services} transition for the homepage project.
+        \item Improved various components of the \textbf{iOS} business page: photo carousel header, search facet, bookmarks.
+        \item Mentored interns and new hires; pushed code to production every other week.
+    \end{itemize}}
+
     \entry
-    {07/13 - 09/14}
-    {Software Engineer}
+    {Jul 2013 - Sep 2014}
+    {Frontend Engineer}
     {Montage Studio}
-    {Montage Studio was a tool made in Montage.js to ease the creation of a Montage.js application. Montage.js is a rich JavaScript framework that borrows a lot of Cocoa's UI design patterns. I was part of the team making Montage Studio, which was entirely written in JavaScript (Node.js and Montage.js). I made various rich UI components such as a tree viewer or replicate OSX's context menus.\\}
+    {\begin{itemize}[nosep, leftmargin=1em, topsep=2pt]
+        \item Built rich UI components for \textbf{Montage Studio}, a development tool for \textbf{Montage.js} applications, including a tree viewer and OS X-style context menus.
+        \item Worked on a fully \textbf{JavaScript}-based stack (\textbf{Node.js} and Montage.js), a framework borrowing heavily from Cocoa's UI design patterns.
+    \end{itemize}}
 \end{entrylist}
 
 \begin{entrylist}
     \entry
-    {06/13 - 10/13}
+    {Jun 2013 - Oct 2013}
     {Open Source Contributor}
     {VideoLAN}
-    {In my spare time, I contributed to the open source project VLC. I submitted various patches for the iOS App. My most noticeable contribution is the little web application that runs on the phone that eases uploading content to the device using a built-in web server.\\}
+    {\begin{itemize}[nosep, leftmargin=1em, topsep=2pt]
+        \item Submitted patches for the \textbf{VLC} \textbf{iOS} app as an open source contributor.
+        \item Built a web application running on the phone that enables uploading content to the device via a built-in web server.
+    \end{itemize}}
+
     \entry
-    {02/12 - 02/13}
+    {Feb 2012 - Feb 2013}
     {Software Engineer Intern}
     {dotCloud (now Docker)}
-    {I was part of a moonshot project, dotCloud JS. It was an open source library providing server-less data persistence. I worked on the library, documentation and marketing website. I was also a core contributor to dotCloud's web dashboard. It is was a single page application made in Backbone.js and Bootstrap. I worked on decreasing the learning curve for new users making boiler-plate apps and interactive walk-throughs. I used WebSockets and File API to bring the web UI closer to feature parity with the CLI tool.\\}
+    {\begin{itemize}[nosep, leftmargin=1em, topsep=2pt]
+        \item Contributed to \textbf{dotCloud JS}, an open source library providing server-less data persistence; worked on the library, documentation, and marketing website.
+        \item Core contributor to dotCloud's web dashboard, a single-page application built with \textbf{Backbone.js} and \textbf{Bootstrap}.
+        \item Reduced learning curve for new users by creating boiler-plate apps and interactive walk-throughs.
+        \item Used \textbf{WebSockets} and \textbf{File API} to bring the web UI closer to feature parity with the CLI tool.
+    \end{itemize}}
 \end{entrylist}
 
-  ~
 \section{Education}
 \begin{entrylist}
   \entry
     {2007 - 2012}
     {Master's Degree in Computer Science}
     {EPITA}
-    {4 year engineering school focused on computer science. I majored in Web and Mobile technologies (MTI: Multimédia et Technologies de l’Information).\\}
+    {4-year engineering school focused on computer science. Majored in Web and Mobile technologies (MTI: Multim\'{e}dia et Technologies de l'Information).}
   \entry
     {\phantom{2006 -} 2006}
     {JavaScript and PHP classes}
     {UCSD Extensions}
-    {I completed two introduction night classes to PHP and JavaScript at UCSD while in high school.\\}
+    {Completed two introduction night classes to PHP and JavaScript at UCSD while in high school.}
   \entry
     {2003 - 2007}
-    {Baccalauréat}
-    {Lycée Félix Faure}
-    {Baccalauréat Scientifique SVT option européenne, mention AB.}
+    {Baccalaur\'{e}at}
+    {Lyc\'{e}e F\'{e}lix Faure}
+    {Baccalaur\'{e}at Scientifique SVT option europ\'{e}enne, mention AB.}
 \end{entrylist}
 
 \begin{aside}
