@@ -22,8 +22,9 @@
     pdfauthor={},
     pdfsubject={},
     pdfkeywords={},
-    colorlinks=false,           % no lik border color
-    allbordercolors=white       % white border color for all
+    colorlinks=true,           % no link border color
+    allbordercolors=white,      % white border color for all
+    pdfborderstyle={/S/U/W 0.8}, % optional: underline instead
 }
 \smartdiagramset{
     bubble center node font = \footnotesize,
@@ -52,7 +53,7 @@
 
 \begin{document}
 \header{Jean-Romain} {Prévost}
-      {Sr Software Engineer}
+      {Senior Software Engineer}
       
 % Fake text to add separator      
 \fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
@@ -61,17 +62,19 @@
 
 % In the aside, each new line forces a line break
 \begin{aside}
-    \includegraphics[scale=0.24]{img/cv-kite.png}
+    \includegraphics[scale=0.24]{img/cv-avatar-wedding.png}
   ~
   ~
   ~
   \section{Info}
-        411 Ashbury ave
-        94530 El Cerrito
-        (650)422-4814
+        905 Laguna ave
+        Burlingame
+        94010 California
+        ~
+        (650) 422-4814
         ~
         \href{mailto:jr@ailleurs.me}{\textbf{jr@ailleurs.me}}
-        \href{https://www.linkedin.com/in/jeanromain/}{/in/jeanromain}
+        \href{https://www.linkedin.com/in/jeanromain/}{\mbox{/in/jeanromain}}
         \href{https://github.com/3on}{github.com/3on}
   ~
   ~
@@ -87,8 +90,8 @@
         \textbf{~Node.js~},
         \textbf{Python},
         \textbf{PHP},
-        \textbf{Swift},
-        \textbf{Git}
+        \textbf{GraphQL},
+        \textbf{Next.js}
     }
 \end{aside}
 ~
@@ -99,15 +102,28 @@
 \section{Experience}
 \begin{entrylist}
     \entry
+    {09/20 - 02/25}
+    {Senior Software Engineer}
+    {Meta}
+    {Led the development of a public-facing image playground website: \texttt{imagine.meta.com}. Delivered the project within a one-month deadline for the Emu launch. At the time, it was the only free image generation tool, attracting significant media attention and resharing by C-level executives.\\ 
+    Within the MetaGen organization, maintained and developed various playgrounds to support new Llama model releases and features, including agent support, side-by-side model comparisons, and file uploads.\\
+    Created a debugging tool for MetaGen that tracks each step of the model request lifecycle, from prompt to final answer, highlighting changes to prompts and metadata throughout the process.\\
+    Led front-end development for multiple Meta Financial Technologies (MFT) tools, improving internal adoption of new financial products.\\
+    Contributed to bringing an NFT wallet viewer to Facebook and Instagram web.\\
+    Maintained and modernized the Facebook Stories web viewer, ensuring a smooth Stories experience on \texttt{facebook.com}.\\}
+
+    \entry
     {08/18 - 01/20}
-    {Sr Software Engineer}
+    {Senior Software Engineer} 
     {Cruise}
     {As part of the Remote Assistance team, I contributed to a React web application that enabled remote control and monitoring of autonomous vehicles. I played a key role in improving tooling and test coverage, by adding support for tools such as: Enzyme, Storybook, Puppeteer. I spearheaded the rendering of the WebGL scene which relied on the internal library Worldview.\\}
     \entry
     {09/14 - 03/18}
     {Software Engineer}
     {Yelp}
-    {On the website, I worked on the modernization of the web photos experience and the web homepage redesign projects. Both projects required a complete rewrite front-end and back-end. I mainly focused on the the front-end side of both projects. The homepage project also required code packaging as part of the micro-services transition, which I lead on the front-end.\\
+    {On the website, I worked on the modernization of the web photos experience and the web homepage redesign projects. Both projects required a complete rewrite front-end and back-end. I mainly focused on the front-end side of both projects. The homepage project also required code packaging as part of the micro-services transition, which I lead on the front-end.
+    \vspace*{0.5em}
+    \\
     On the iOS application, I worked on improving various components of the business page: photo carousel header, search facet, bookmarks etc.
     Other contributions include mentoring (intern and new hire) and pushing code to production every other week.
     \\}
@@ -116,6 +132,9 @@
     {Software Engineer}
     {Montage Studio}
     {Montage Studio was a tool made in Montage.js to ease the creation of a Montage.js application. Montage.js is a rich JavaScript framework that borrows a lot of Cocoa's UI design patterns. I was part of the team making Montage Studio, which was entirely written in JavaScript (Node.js and Montage.js). I made various rich UI components such as a tree viewer or replicate OSX's context menus.\\}
+\end{entrylist}
+
+\begin{entrylist}
     \entry
     {06/13 - 10/13}
     {Open Source Contributor}
@@ -127,8 +146,7 @@
     {dotCloud (now Docker)}
     {I was part of a moonshot project, dotCloud JS. It was an open source library providing server-less data persistence. I worked on the library, documentation and marketing website. I was also a core contributor to dotCloud's web dashboard. It is was a single page application made in Backbone.js and Bootstrap. I worked on decreasing the learning curve for new users making boiler-plate apps and interactive walk-throughs. I used WebSockets and File API to bring the web UI closer to feature parity with the CLI tool.\\}
 \end{entrylist}
-  ~
- \pagebreak
+
   ~
 \section{Education}
 \begin{entrylist}
@@ -152,6 +170,14 @@
 \begin{aside}
   ~
   ~
+  ~
+  ~
+  ~
+  ~
+  ~
+  ~
+  ~
+  ~
   \section{Passions}
   ~
     \smartdiagram[bubble diagram]{
@@ -159,8 +185,8 @@
         \textbf{Skiing},
         \textbf{Cooking},
         \textbf{Mountain}\\\textbf{biking},
-        \textbf{Motor-}\\\textbf{cycling},
-        \textbf{Cat}\\\textbf{hiking}
+        \textbf{Camping},
+        \textbf{Off-grid}\\\textbf{Systems}
     }
     ~
 \end{aside}
